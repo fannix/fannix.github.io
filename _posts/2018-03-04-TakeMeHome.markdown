@@ -79,7 +79,16 @@ The responsibility of `MainActivity` and `TakeMeHome` are to initialize the app 
 
 ![invoke](/images/mainActivity.png)
 
-Once detected, If the app is in the background, a notification will be sent to the running device. If the app is in foreground or the notification is clicked. `TrackingActivity` will be shown on the foreground. It displays information about the missing subject. And it also track the movement of the beacon in real-time, thus can help the device owner make a more informed decision, like whether to call police immediately, or continue to follow the children.
+Once detected, If the app is in the background, a notification will be sent to the running device. If the app is in foreground or the notification is clicked. `TrackingActivity` will be brought up onto the foreground. 
+This activity will conduct the following steps:
+1. Query the registry contract and determine whether the detected beacon is registered as missing.
+2. Use the beacon ID (shown in the image below) to retrieve the masked reward contract address and unmask it.
+3. Get the URL and the email (doge@doge.com for this beacon) from the reward contract. 
+4. Displays information about the missing subject.
+5. Submit the current location
+6. Show the real-time distance between the device and the beacon and track the movement of the beacon.
+This can help the device owner make a more informed decision, like whether to call police immediately, or continue to follow the children.
+
 ![invoke](/images/trackingActivity.png)
 
 Clicking the Send Email button will bring up the email program. You can add extra information about the location or circumstance here to send to the contact person. 
