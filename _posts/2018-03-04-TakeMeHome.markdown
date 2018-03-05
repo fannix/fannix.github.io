@@ -93,10 +93,14 @@ The codes for the app are also in github: <https://github.com/fannix/TakeMeHome>
 
 ## Future Improvement. 
 
-NEO doesn't support making transaction inside the smart contract. 
-Lack of development and debugging tools.
-limited functionality inside smart contract.
+We identify a few potential improvements for this application.
 
-social benefit.
-moral hazard.
+1. NEO doesn't support transferring native assets inside the smart contract yet. This force us to settle for a less obvious solution to distribute rewards. Basically we are creating IOUs, instead of sending assets directly. 
+We are finding a better way to bypass the limitation.
+2. Calling smart contracts with RPC takes a few seconds to get response. Hence the app is not very responsive. We need to optimize this aspect.
 
+
+In the process of development, there are a few limitation from NEO sides that we feel can be improved:
+
+1. Lack of mature development and debugging tools.
+2. The documentation is still limited.

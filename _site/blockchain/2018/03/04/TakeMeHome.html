@@ -183,13 +183,20 @@ The value is the address of the smart contract that encodes the reward rules mas
 
 <h2 id="future-improvement">Future Improvement.</h2>
 
-<p>NEO doesn’t support making transaction inside the smart contract. 
-Lack of development and debugging tools.
-limited functionality inside smart contract.</p>
+<p>We identify a few potential improvements for this application.</p>
 
-<p>social benefit.
-moral hazard.</p>
+<ol>
+  <li>NEO doesn’t support transferring native assets inside the smart contract yet. This force us to settle for a less obvious solution to distribute rewards. Basically we are creating IOUs, instead of sending assets directly. 
+We are finding a better way to bypass the limitation.</li>
+  <li>Calling smart contracts with RPC takes a few seconds to get response. Hence the app is not very responsive. We need to optimize this aspect.</li>
+</ol>
 
+<p>In the process of development, there are a few limitation from NEO sides that we feel can be improved:</p>
+
+<ol>
+  <li>Lack of mature development and debugging tools.</li>
+  <li>The documentation is still limited.</li>
+</ol>
 
   </div>
 
