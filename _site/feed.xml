@@ -1,34 +1,102 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-03-04T21:39:36+00:00</updated><id>http://localhost:4000/</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">TakeMeHome Documentation</title><link href="http://localhost:4000/blockchain/2018/03/04/TakeMeHome.html" rel="alternate" type="text/html" title="TakeMeHome Documentation" /><published>2018-03-04T21:37:31+00:00</published><updated>2018-03-04T21:37:31+00:00</updated><id>http://localhost:4000/blockchain/2018/03/04/TakeMeHome</id><content type="html" xml:base="http://localhost:4000/blockchain/2018/03/04/TakeMeHome.html">&lt;p&gt;TakeMeHome is an android app that helps to find missing kids or pets. It leverages the NEO blockchain technology and the beacon technology to create a search network. It shows how blockchain techonology can improve the general welfare of the socity. It is a show case of decentralized autonomous organization (DAO).&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-03-05T22:48:32+00:00</updated><id>http://localhost:4000/</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">TakeMeHome: An App that Saves Children</title><link href="http://localhost:4000/blockchain/2018/03/04/TakeMeHome.html" rel="alternate" type="text/html" title="TakeMeHome: An App that Saves Children" /><published>2018-03-04T21:37:31+00:00</published><updated>2018-03-04T21:37:31+00:00</updated><id>http://localhost:4000/blockchain/2018/03/04/TakeMeHome</id><content type="html" xml:base="http://localhost:4000/blockchain/2018/03/04/TakeMeHome.html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
-&lt;p&gt;Trafficking of children is a serious problem, the International Labour Organization estimates that 1.2 million children are trafficked each year.&lt;/p&gt;
+&lt;p&gt;A missing kid (or pet) is the worst nightmare that could happen to a happy family. In the United States, an estimated 460,000 children are reported missing every year. And in the most unfortunate cases, many missing kids are actually abducted and trafficked, and the International Labour Organization estimates that 1.2 million children are trafficked each year.&lt;/p&gt;
 
-&lt;p&gt;The challenge is 1. to identify the missing subject 2. to locate the missing subject. 3. to mobilize as many as possible persons to make the join effort to bring back the missing subject.&lt;/p&gt;
+&lt;p&gt;Usually, law enforcement and government takes the main responsibility of bringing the children back. In reality, they often need to work on multiple cases at the same time, and it limits their time that can be spent on any specific case. But we believe that to bring every missing kid home is of the utmost importance. And with the new technology, we are able to empower people and take some responsibility of finding missing kids. We also believes that we need to reward people that take
+these responsibility in order to get more people involve in.&lt;/p&gt;
 
-&lt;p&gt;An innovative use of beacon technology. Beacon technologies include iBeacon and other similar technologies such as Eddystones and altbeacons. Regardless of the brands, they are based on Bluetooth low energy proximity sensing by transmitting a universally unique identifier picked up by a compatible app or operating system. The identifier and several bytes sent with it can be used to determine the device’s physical location, track customers, or trigger a location-based action on the device.&lt;/p&gt;
+&lt;p&gt;To achieve such goals, several block issues need to be solved. These include:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;how to identify the missing subject.&lt;/li&gt;
+  &lt;li&gt;how to locate the missing subject.&lt;/li&gt;
+  &lt;li&gt;how to mobilize as many people as possible to join this effort.&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;Comparing to other devices that provides tracking functionality such as GPS. Beacons are cheap, light consume very few power, can last for 1 or 2 years, have a acceptable range of signal coverage, usually up to several hundred metres.&lt;/p&gt;
+&lt;p&gt;TakeMeHome is an android app that helps to find missing kids or pets. It leverages the Beacon technology and the NEO blockchain technology cleverly to create a missing-kids-search network.
+Beacons are used to identify missing subjects and determine their location. NEO blockchain is used to give the people who make contributions the well-deserved credit and make sure the network stay healthy and can grow.&lt;/p&gt;
 
-&lt;p&gt;Knowing the location of the missing subject is helpful. But ultimately, for the parent of missing child, or the owner of the lost cat, the most important thing is to bring it back safely, not to know where it is. To this end, we need an effective way to motivate people, especially the people closed to the current detected location, to search the kids or the pets.&lt;/p&gt;
+&lt;p&gt;This application shows that blockchain is not just a up-and-coming technology for economy life, but can also be used to improve the general welfare of the society.&lt;/p&gt;
 
-&lt;p&gt;NEO is a revolutionary way to create a decentralized autonomous organization (DAO). No trusted third party is necessary to organize the joint search. Once the child or pet is missing, the parent or the owner can set up and activate the bounty task, and then every TakeMeHome app will start searching the missing subject immediately. This is the best way to use the precious time to find the missing persons or pets, before it is too late and the missing subject have been brought to the next town or city. To reward the people who contribute to the searching, persons who are able to detect the beacons, thus locate the missing one will get some digital currency in return. And person who are help to bring the missing subject to home will get a large amount of digital currency. The reward mechanism is determined by the deployed smart contract.&lt;/p&gt;
+&lt;h2 id=&quot;design-and-implementation&quot;&gt;Design and implementation&lt;/h2&gt;
 
-&lt;p&gt;Design and implementation&lt;/p&gt;
+&lt;h3 id=&quot;architecture&quot;&gt;Architecture&lt;/h3&gt;
 
-&lt;p&gt;The role of mainactivities and TakeMeHome is to initialize the app context and prepare for nearby beacons. Once detected, If the app is in the background, a notification is sent.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/diagram.png&quot; alt=&quot;invoke&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;If the app is in foreground or the notification is clicked. TrackingActivities will be used to track the movement of the beacon in realtime.&lt;/p&gt;
+&lt;p&gt;The application consist of 3 components.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Beacons that are carried by the children.&lt;/li&gt;
+  &lt;li&gt;Smart Contracts that are deployed onto the NEO blockchain.&lt;/li&gt;
+  &lt;li&gt;An Android app that listens for broadcast message of beacons, and call the contracts when it receives eligible messages.&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;This app uses the excellent o3 android library for interacting with NEO blockchain. alt beacon library is used to detect and track beacons.&lt;/p&gt;
+&lt;h3 id=&quot;beacons&quot;&gt;Beacons&lt;/h3&gt;
 
-&lt;p&gt;social benefit.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/beacon.png&quot; alt=&quot;invoke&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;future improvement.&lt;/p&gt;
+&lt;p&gt;Beacon technologies include iBeacon and other similar technologies such as Eddystones and altbeacons. Regardless of the brands, they are all based on Bluetooth low energy technology. Beacons can act as proximity sensors by transmitting a universally unique identifier, which can then be picked up by a compatible app or operating system. 
+The identifier and several bytes sent with it can be used to determine the device’s physical location, track customers, or trigger a location-based action on the device.&lt;/p&gt;
+
+&lt;p&gt;Comparing to other devices that provides tracking functionality such as GPS, beacons have the following advantges:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;small and light. It can be easily the carried by an infant or a small dog. As shown on the above image, the blue beacon is about the same size as a coin.&lt;/li&gt;
+  &lt;li&gt;cheap and affordable by almost every family. It normally costs less than 20 dollars.&lt;/li&gt;
+  &lt;li&gt;it consumes very little power and one new battery can last for more than 1 year. This keeps the window of saving the kids open for a very long time.&lt;/li&gt;
+  &lt;li&gt;it has a acceptable range of signal coverage, usually up to several hundred meters.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;smart-contract&quot;&gt;Smart Contract&lt;/h3&gt;
+
+&lt;p&gt;Knowing the location of the missing subject is helpful. But ultimately, for the parent of missing child, or the owner of the lost cat, the most important thing is to bring it back safely, not to know where it is. To this end, we need an effective way to motivate people, especially the people closed to the current detected location, to search for the kids or the pets.&lt;/p&gt;
+
+&lt;p&gt;NEO is a revolutionary way to enable a decentralized autonomous organization (DAO) without trusted third parties involved. Once the child or pet is missing, the parent or the owner can set up and activate the bounty task,
+and then every TakeMeHome app will start searching the missing subject immediately. This is the best way to use the very precious time to find the missing persons or pets, before it is too late and the missing subject have been brought to the next town or city. 
+To reward the people who contribute to the searching, persons who are able to detect the beacons, 
+thus locate the missing one will get some digital currency in reward. And person who are help to bring the missing subject to home will get a large amount of digital currency. The reward mechanism is determined by the deployed smart contract.&lt;/p&gt;
+
+&lt;p&gt;We deploy two smart contracts.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;The first one is a registry for missing children. This is basically a key value table. The key is the hash of the beacon ID. The reason we use the hash instead of the plain text of beacon ID is to make sure the people who claims are in the proximity region of the children are not reporting incorrect current location by using fake beacon ID.
+The value is the address of the smart contract that encodes the reward rules masked by a modified beacon ID string. This is also to ensure the people who calls the reward contract indeed are in the proximity region.&lt;/li&gt;
+  &lt;li&gt;The second one  has several purposes.
+    &lt;ul&gt;
+      &lt;li&gt;It stores the URL of web page which has the photo and description of the missing subject.&lt;/li&gt;
+      &lt;li&gt;It stores the email of the contact person.&lt;/li&gt;
+      &lt;li&gt;It stores the historical reported location of the children or the pets.&lt;/li&gt;
+      &lt;li&gt;It describes how people submitting the location will be rewarded.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;You can find codes for both contracts here: &lt;a href=&quot;https://github.com/fannix/TakeMeHomeContract&quot;&gt;https://github.com/fannix/TakeMeHomeContract&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;android-app&quot;&gt;Android App&lt;/h3&gt;
+
+&lt;p&gt;The app consist of 4 Java files and a few libraries.&lt;/p&gt;
+
+&lt;p&gt;The responsibility of &lt;code class=&quot;highlighter-rouge&quot;&gt;MainActivity&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;TakeMeHome&lt;/code&gt; are to initialize the app context and detect beacons in background.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/mainActivity.png&quot; alt=&quot;invoke&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once detected, If the app is in the background, a notification will be sent to the running device. If the app is in foreground or the notification is clicked. &lt;code class=&quot;highlighter-rouge&quot;&gt;TrackingActivity&lt;/code&gt; will be shown on the foreground. It displays information about the missing subject. And it also track the movement of the beacon in real-time, thus can help the device owner make a more informed decision, like whether to call police immediately, or continue to follow the children.
+&lt;img src=&quot;/images/trackingActivity.png&quot; alt=&quot;invoke&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Clicking the Send Email button will bring up the email program. You can add extra information about the location or circumstance here to send to the contact person.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/email.png&quot; alt=&quot;invoke&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;API&lt;/code&gt; is the class that talks with the NEO blockchain. A large part of the communication is delegated to the excellent &lt;code class=&quot;highlighter-rouge&quot;&gt;O3Android&lt;/code&gt; library for interacting with NEO blockchain. &lt;code class=&quot;highlighter-rouge&quot;&gt;AltBeaconLibrary&lt;/code&gt; is used to detect and track beacons.&lt;/p&gt;
+
+&lt;p&gt;The codes for the app are also in github: &lt;a href=&quot;https://github.com/fannix/TakeMeHome&quot;&gt;https://github.com/fannix/TakeMeHome&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;future-improvement&quot;&gt;Future Improvement.&lt;/h2&gt;
 
 &lt;p&gt;NEO doesn’t support making transaction inside the smart contract. 
 Lack of development and debugging tools.
 limited functionality inside smart contract.&lt;/p&gt;
 
-&lt;p&gt;moral hazard.&lt;/p&gt;</content><author><name></name></author><summary type="html">TakeMeHome is an android app that helps to find missing kids or pets. It leverages the NEO blockchain technology and the beacon technology to create a search network. It shows how blockchain techonology can improve the general welfare of the socity. It is a show case of decentralized autonomous organization (DAO).</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2018/03/04/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2018-03-04T20:50:31+00:00</published><updated>2018-03-04T20:50:31+00:00</updated><id>http://localhost:4000/jekyll/update/2018/03/04/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/03/04/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+&lt;p&gt;social benefit.
+moral hazard.&lt;/p&gt;</content><author><name></name></author><summary type="html">Introduction</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2018/03/04/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2018-03-04T20:50:31+00:00</published><updated>2018-03-04T20:50:31+00:00</updated><id>http://localhost:4000/jekyll/update/2018/03/04/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/03/04/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
