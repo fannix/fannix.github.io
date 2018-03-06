@@ -100,12 +100,12 @@ Clicking the Send Email button will bring up the email program. You can add extr
 The codes for the app are also in github: <https://github.com/fannix/TakeMeHome>
 
 
-## Future Improvement. 
+## Future Improvement 
 
 We identify a few potential improvements for this application.
 
 1. NEO doesn't support transferring native assets inside the smart contract yet. This force us to settle for a less obvious solution to distribute rewards. Basically we are creating IOUs, instead of sending assets directly. 
-We are finding a better way to bypass the limitation.
+We are finding a better way to bypass the limitation. One approach we might consider is to mint tokens for this application to distribute rewards.
 2. Calling smart contracts with RPC takes a few seconds to get response. Hence the app is not very responsive. We need to optimize this aspect.
 
 
