@@ -17,8 +17,7 @@ these responsibility in order to get more people involve in.
 TakeMeHome is an android app that everyone can use to find missing kids or pets. It leverages the Beacon technology and the NEO blockchain technology cleverly to create a missing-kids-search network.
 Beacons are used to identify missing subjects and determine their location. NEO blockchain is used to give the people who make contributions the well-deserved credit and make sure the network stay healthy and can grow.
 
-
-This application shows that blockchain is not just a up-and-coming technology for economy life, but can also be used to improve the general welfare of the society. 
+This application shows that blockchain technology not only plays an important role in economy, but also helps to improve the general welfare of the entire world. 
 
 ## Challenges 
 
