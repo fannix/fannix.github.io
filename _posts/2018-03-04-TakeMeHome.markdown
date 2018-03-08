@@ -112,7 +112,7 @@ The codes for the app are also in github: <https://github.com/fannix/TakeMeHome>
 3. An innovative combination of technologies: blockchain + beacon + mobile
 
 
-## Future work 
+## Future Work 
 
 We identify a few potential improvements for this application.
 
