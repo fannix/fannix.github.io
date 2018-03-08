@@ -32,7 +32,7 @@ In the following section, we will show how we tackle these issues via innovative
 
 ## Design and implementation 
 
-### Architecture ###
+### Architecture
 
 ![invoke](/images/diagram.png)
 
@@ -41,7 +41,7 @@ The application consist of 3 components.
 2. Smart Contracts that are deployed onto the NEO blockchain. 
 3. An Android app that listens for broadcast message of beacons, and call the contracts when it receives eligible messages.
 
-### Beacons ####
+### Beacons
 
 ![invoke](/images/beacon.png)
 
@@ -55,7 +55,7 @@ Comparing to other devices that also provide tracking functionality such as GPS,
 4. it has an acceptable range of signal coverage, usually up to several hundred meters.
 
 
-### Smart Contract ###
+### Smart Contract
 
 Knowing the location of the missing subject is helpful. But ultimately, for the parent of missing child, or the owner of the lost cat, the most important thing is to bring it back safely. To this end, we need an effective way to motivate people, especially the people closed to the current detected location, to search for the kids or the pets.
 
@@ -74,25 +74,25 @@ The value is the address of the smart contract that encodes the reward rules mas
 
 You can find codes for both contracts here: <https://github.com/fannix/TakeMeHomeContract>
 
-### Android App ###
+### Android App
 
 
 The app consist of 4 Java files and a few libraries.
 
 
-The responsibility of `MainActivity` and `TakeMeHome` are to initialize the app context and detect beacons in background.
+The responsibility of `MainActivity` and `TakeMeHome` are to initialize the app context and search for beacons in background.
 
 ![invoke](/images/mainActivity.png)
 
-Once detected, If the app is in the background, a notification will be sent to the running device. If the app is in foreground or the notification is clicked. `TrackingActivity` will be brought up onto the foreground. 
+If a beacon is detected , a notification will be sent to the running device and `TrackingActivity` will be brought up to the foreground. 
 This activity will conduct the following steps:
 1. Query the registry contract and determine whether the detected beacon is registered as missing.
 2. Use the beacon ID (shown in the image below) to retrieve the masked reward contract address and unmask it.
 3. Get the URL and the email (doge@doge.com for this beacon) from the reward contract. 
 4. Displays information about the missing subject.
-5. Submit the current location
+5. Submit the current location.
 6. Show the real-time distance between the device and the beacon and track the movement of the beacon.
-This can help the device owner make a more informed decision, like whether to call police immediately, or continue to follow the children.
+This can help the device owner to make a more informed decision, he or she could call the police immediately, come forward to help the child, or follow the child.
 
 ![invoke](/images/trackingActivity.png)
 
@@ -100,7 +100,7 @@ Clicking the Send Email button will bring up the email program. You can add extr
 
 ![invoke](/images/email.png)
 
-`API` is the class that talks with the NEO blockchain. A large part of the communication is delegated to the excellent `O3Android` library for interacting with NEO blockchain. `AltBeaconLibrary` is used to detect and track beacons.
+`API` is the class that communicates with the NEO blockchain. A large part of the communication is delegated to the excellent `O3Android` library for interacting with NEO blockchain. `AltBeaconLibrary` is used to detect and track beacons.
 
 The codes for the app are also in github: <https://github.com/fannix/TakeMeHome>
 

@@ -172,20 +172,20 @@ The value is the address of the smart contract that encodes the reward rules mas
 
 <p>The app consist of 4 Java files and a few libraries.</p>
 
-<p>The responsibility of <code class="highlighter-rouge">MainActivity</code> and <code class="highlighter-rouge">TakeMeHome</code> are to initialize the app context and detect beacons in background.</p>
+<p>The responsibility of <code class="highlighter-rouge">MainActivity</code> and <code class="highlighter-rouge">TakeMeHome</code> are to initialize the app context and search for beacons in background.</p>
 
 <p><img src="/images/mainActivity.png" alt="invoke" /></p>
 
-<p>Once detected, If the app is in the background, a notification will be sent to the running device. If the app is in foreground or the notification is clicked. <code class="highlighter-rouge">TrackingActivity</code> will be brought up onto the foreground. 
+<p>If a beacon is detected , a notification will be sent to the running device and <code class="highlighter-rouge">TrackingActivity</code> will be brought up to the foreground. 
 This activity will conduct the following steps:</p>
 <ol>
   <li>Query the registry contract and determine whether the detected beacon is registered as missing.</li>
   <li>Use the beacon ID (shown in the image below) to retrieve the masked reward contract address and unmask it.</li>
   <li>Get the URL and the email (doge@doge.com for this beacon) from the reward contract.</li>
   <li>Displays information about the missing subject.</li>
-  <li>Submit the current location</li>
+  <li>Submit the current location.</li>
   <li>Show the real-time distance between the device and the beacon and track the movement of the beacon.
-This can help the device owner make a more informed decision, like whether to call police immediately, or continue to follow the children.</li>
+This can help the device owner to make a more informed decision, he or she could call the police immediately, come forward to help the child, or follow the child.</li>
 </ol>
 
 <p><img src="/images/trackingActivity.png" alt="invoke" /></p>
@@ -194,7 +194,7 @@ This can help the device owner make a more informed decision, like whether to ca
 
 <p><img src="/images/email.png" alt="invoke" /></p>
 
-<p><code class="highlighter-rouge">API</code> is the class that talks with the NEO blockchain. A large part of the communication is delegated to the excellent <code class="highlighter-rouge">O3Android</code> library for interacting with NEO blockchain. <code class="highlighter-rouge">AltBeaconLibrary</code> is used to detect and track beacons.</p>
+<p><code class="highlighter-rouge">API</code> is the class that communicates with the NEO blockchain. A large part of the communication is delegated to the excellent <code class="highlighter-rouge">O3Android</code> library for interacting with NEO blockchain. <code class="highlighter-rouge">AltBeaconLibrary</code> is used to detect and track beacons.</p>
 
 <p>The codes for the app are also in github: <a href="https://github.com/fannix/TakeMeHome">https://github.com/fannix/TakeMeHome</a></p>
 
