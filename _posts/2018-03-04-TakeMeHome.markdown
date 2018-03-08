@@ -8,20 +8,26 @@ categories: blockchain
 
 A missing kid (or pet) is the worst nightmare that could happen to a happy family. In the United States, an estimated 460,000 children are reported missing every year. And in the most unfortunate cases, many missing kids are actually abducted and trafficked, and the International Labour Organization estimates that 1.2 million children are trafficked each year. 
 
-Usually, law enforcement and government takes the main responsibility of bringing the children back. In reality, they often need to work on multiple cases at the same time, and it limits their time that can be spent on any specific case. But we believe that to bring every missing kid home is of the utmost importance. And with the new technology, we are able to empower people and take some responsibility of finding missing kids. We also believes that we need to reward people that take
+Usually, law enforcement and government takes the main responsibility of bringing the children back. In reality, they often need to work on multiple cases at the same time,
+and it limits their time that can be spent on any specific case.
+But to bring every missing kid home is of the utmost importance.
+And we believe that with technology innovation, people should be empowered and everyone can take some responsibility of finding missing kids. We also believes that we need to reward people that fulfill
 these responsibility in order to get more people involve in. 
 
-To achieve such goals, several block issues need to be solved. These include:
+TakeMeHome is an android app that everyone can use to find missing kids or pets. It leverages the Beacon technology and the NEO blockchain technology cleverly to create a missing-kids-search network.
+Beacons are used to identify missing subjects and determine their location. NEO blockchain is used to give the people who make contributions the well-deserved credit and make sure the network stay healthy and can grow.
+
+
+This application shows that blockchain is not just a up-and-coming technology for economy life, but can also be used to improve the general welfare of the society. 
+
+## Challenges 
+
+Building such app is not an easy task. Several blocking issues need to be solved. These include:
 1. how to identify the missing subject.
 2. how to locate the missing subject. 
 3. how to mobilize as many people as possible to join this effort.
 
-TakeMeHome is an android app that helps to find missing kids or pets. It leverages the Beacon technology and the NEO blockchain technology cleverly to create a missing-kids-search network.
-Beacons are used to identify missing subjects and determine their location. NEO blockchain is used to give the people who make contributions the well-deserved credit and make sure the network stay healthy and can grow.
-
-This application shows that blockchain is not just a up-and-coming technology for economy life, but can also be used to improve the general welfare of the society. 
-
-
+In the following section, we will show how we tackle these issues via innovative combination of Beacon technology and blockchain.
 
 
 ## Design and implementation 
@@ -42,21 +48,20 @@ The application consist of 3 components.
 Beacon technologies include iBeacon and other similar technologies such as Eddystones and altbeacons. Regardless of the brands, they are all based on Bluetooth low energy technology. Beacons can act as proximity sensors by transmitting a universally unique identifier, which can then be picked up by a compatible app or operating system. 
 The identifier and several bytes sent with it can be used to determine the device's physical location, track customers, or trigger a location-based action on the device.
 
-Comparing to other devices that provides tracking functionality such as GPS, beacons have the following advantges:
+Comparing to other devices that also provide tracking functionality such as GPS, beacons have the following advantages:
 1. small and light. It can be easily the carried by an infant or a small dog. As shown on the above image, the blue beacon is about the same size as a coin.
 2. cheap and affordable by almost every family. It normally costs less than 20 dollars. 
 3. it consumes very little power and one new battery can last for more than 1 year. This keeps the window of saving the kids open for a very long time.  
-4. it has a acceptable range of signal coverage, usually up to several hundred meters.
+4. it has an acceptable range of signal coverage, usually up to several hundred meters.
 
 
 ### Smart Contract ###
 
-Knowing the location of the missing subject is helpful. But ultimately, for the parent of missing child, or the owner of the lost cat, the most important thing is to bring it back safely, not to know where it is. To this end, we need an effective way to motivate people, especially the people closed to the current detected location, to search for the kids or the pets.
+Knowing the location of the missing subject is helpful. But ultimately, for the parent of missing child, or the owner of the lost cat, the most important thing is to bring it back safely. To this end, we need an effective way to motivate people, especially the people closed to the current detected location, to search for the kids or the pets.
 
-NEO is a revolutionary way to enable a decentralized autonomous organization (DAO) without trusted third parties involved. Once the child or pet is missing, the parent or the owner can set up and activate the bounty task,
-and then every TakeMeHome app will start searching the missing subject immediately. This is the best way to use the very precious time to find the missing persons or pets, before it is too late and the missing subject have been brought to the next town or city. 
-To reward the people who contribute to the searching, persons who are able to detect the beacons, 
-thus locate the missing one will get some digital currency in reward. And person who are help to bring the missing subject to home will get a large amount of digital currency. The reward mechanism is determined by the deployed smart contract.
+NEO is a revolutionary way to enable a decentralized autonomous organization (DAO) without trusted third parties involved. If the child or pet was missing, the parent or the owner can set up and activate the bounty task via a smart contract,
+and then every TakeMeHome app will start searching the missing subject immediately. This is the best way to utilize the very precious time, before it is too late and the missing subject have been taken to the other towns or cities. 
+To reward the people who contribute to the searching, smart contracts are also used to reward persons who are able to detect the beacons and provide valuable information about where the missing ones are. The reward mechanism is hard-coded in the deployed smart contract, thus avoid any potential ambiguity and dispute.
 
 We deploy two smart contracts.
 1. The first one is a registry for missing children. This is basically a key value table. The key is the hash of the beacon ID. The reason we use the hash instead of the plain text of beacon ID is to make sure the people who claims are in the proximity region of the children are not reporting incorrect current location by using fake beacon ID.
@@ -100,7 +105,14 @@ Clicking the Send Email button will bring up the email program. You can add extr
 The codes for the app are also in github: <https://github.com/fannix/TakeMeHome>
 
 
-## Future Improvement 
+## Contribution
+
+1. Targets and solves a very important social problem
+2. A good example of how NEO can be used to benefit general public
+3. An innovative combination of technologies: blockchain + beacon + mobile
+
+
+## Future work 
 
 We identify a few potential improvements for this application.
 
