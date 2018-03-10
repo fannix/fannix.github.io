@@ -103,6 +103,8 @@ Clicking the Send Email button will bring up the email program. You can add extr
 
 The codes for the app are also in github: <https://github.com/fannix/TakeMeHome>
 
+If you want to see the app in action but don't want to install and compile the codes, you can take a look at <https://youtu.be/l5xETZ_naJw>
+
 
 ## Contribution
 
